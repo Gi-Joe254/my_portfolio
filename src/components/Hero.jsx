@@ -1,17 +1,22 @@
+import "./Hero.css"
+import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa"
+import {  } from "react-icons/fa"
+
+
 export default function Hero(){
     return(
-        <section>
+        <section className="hero">
             <p>Hi I am</p>
             <h6>Joseph Gacheru</h6>
             <h1>React Web Developer</h1>
-            <li>
-                <li>linkedIn Link</li>
-                <li>Fiverr Link</li>
-                <li>instagram Link</li>
-            </li>
+            <ul className="socials">
+                <li><a><FaLinkedin /></a></li>
+                <li><a><FaFacebook /></a></li>
+                <li><a><FaInstagram /></a></li>
+            </ul>
             <article>
-                <button>Contact Me</button>
-                <button>Download CV</button>
+                <button className="contactBtn">Contact Me</button>
+                <button className="cvBtn">Download CV</button>
             </article>
         </section>
         

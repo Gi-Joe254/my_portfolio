@@ -1,0 +1,50 @@
+.hero {
+    margin: 0;
+    background-color: #1b1b1b;
+    text-align: center;
+    padding-top: 40px;
+    height: 70vh;
+}
+.hero > p {
+    color: #838282;
+}
+.hero > h6 {
+    color: #838282;
+    font-size: 1.1rem;
+}
+.hero > h1 {
+    color: rgb(231, 109, 9);
+    font-size: 4rem;
+    line-height: 1;
+    padding-top: 30px;
+}
+.socials {
+    color: #838282;
+    display: flex;
+    justify-content: center;
+    margin-block: 30px;
+    gap: 10px;
+}
+
+.hero > article {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.contactBtn {
+    background-color: rgb(231, 109, 9);
+    border: 1px solid transparent;
+    padding: 0.1rem 1rem;
+    color:#d1cece;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.cvBtn {
+    color: #838282;
+    border: 2px solid #838282;
+    border-radius: 8px;
+    padding: 0.1rem 1rem;
+    background-color: transparent;
+}
