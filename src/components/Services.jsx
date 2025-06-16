@@ -1,10 +1,10 @@
-import Hero from "./Hero";
+import "./Services.css"
 
 export default function Services(){
     return(
-        <section>
+        <section className="services">
             <header>Services</header>
-            <article>
+            <article className="servicesList">
                 <div>
                    <h2>Front-End Web Development</h2>
                    <p>Building responsive websites using React</p>
