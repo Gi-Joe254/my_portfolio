@@ -3,7 +3,7 @@ import './Nav.css'
 export default function Nav(){
     return(
         <nav>
-            <FaBars />
+            <FaBars size='20px'/>
             <span>Logo</span>
             <button>Contact Me</button>
         </nav>
