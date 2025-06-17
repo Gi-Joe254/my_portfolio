@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard"
 export default function Projects(){
     return(
         <section>
-            <header>Portfolio</header>
+            <header>Projects</header>
             <ProjectCard 
                 projectImg=''
                 projectCaption="Project 1"

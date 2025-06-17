@@ -1,0 +1,55 @@
+.about {
+    background-color: #1b1b1b;
+    padding-bottom: 30px;
+}
+.about > header {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    
+    letter-spacing: 0.8px;
+}
+.about > p {
+    color: #818080;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.9;
+}
+.about > .cvBtn {
+    background-color: rgb(231, 109, 9);
+    border: 1px solid transparent;
+    padding: 0.3rem 1rem;
+    color:#d1cece;
+    display: block;
+    margin: 20px auto;
+
+}
+.arrowDown {
+    padding-top: 0.2rem;
+    
+}
+.skills {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 20px;
+    color: #818080;
+    margin: 40px;
+    color: rgb(231, 109, 9);
+    
+}
+.skills > figure {
+    border: 6px solid rgb(231, 109, 9);
+    border-radius: 40px;
+    padding: 20px;
+    
+}
+.skillIcon {
+    border: 2px solid transparent;
+    border-radius: 70px;
+    height: 50px;
+    width: max-content;
+}
+figcaption {
+    color: #818080;
+}

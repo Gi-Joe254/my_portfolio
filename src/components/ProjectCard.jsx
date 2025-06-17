@@ -1,10 +1,8 @@
 export default function ProjectCard(props){
     return(
         <div>
-            <figure>
-                <img src={props.projectImg} />
-                <figcaption>{props.ProjectCaption}</figcaption>
-            </figure>          
+            <img src={props.projectImg} />
+            <div>{props.projectCaption}</div>        
 
         </div>
     )
