@@ -1,8 +1,10 @@
+import "./Connect.css"
+
 export default function Connect(){
     return(
-        <section>
+        <section className="connect">
             <header>Connect with me</header>
-            <form>
+            <form className="connectForm">
                 <input type="text" name="name" placeholder="Name"/>
                 <input type="email" name="email" placeholder="Email"/>
                 <input type="tel" name="phone" placeholder="Phone Number"/>
@@ -15,6 +17,7 @@ export default function Connect(){
                     <option value='landing'>Landing Pages</option>
                     <option value='maintenance'>Website Maintenance</option>
                 </select>
+                <textarea name="projectDetails" placeholder="Project Details" rows='5' />
                 <button type="submit">Send</button>
             </form>
         </section>

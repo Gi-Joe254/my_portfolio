@@ -1,9 +1,9 @@
+
 export default function ProjectCard(props){
     return(
-        <div>
+        <div className="projectCard">
             <img src={props.projectImg} />
-            <div>{props.projectCaption}</div>        
-
+            <span>{props.projectCaption}</span>        
         </div>
     )
 }

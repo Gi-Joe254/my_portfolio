@@ -1,0 +1,44 @@
+.connect{
+    background-color: #1b1b1b;
+    padding-bottom: 90px;
+    padding-top: 50px;
+}
+.connect > header {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    
+    letter-spacing: 0.8px;
+}
+.connectForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+.connectForm > input, textarea, select{
+    background-color: #242323;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    height: 50px;
+    padding-left: 20px;
+    color: #807f7f;
+    
+}
+.connectForm > textarea {
+    resize: vertical;
+    max-height: 200px;
+    font-size: 1rem;
+    padding-block: 20px;
+}
+.connectForm > button {
+    color: #838282;
+    border: 2px solid #838282;
+    border-radius: 8px;
+    padding: 0.1rem 1rem;
+    background-color: transparent;
+    width: 100px;
+    display: block;
+    margin: 20px auto;
+}
+

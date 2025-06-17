@@ -1,8 +1,9 @@
 import ProjectCard from "./ProjectCard"
+import "./Projects.css"
 
 export default function Projects(){
     return(
-        <section>
+        <section className="projects">
             <header>Projects</header>
             <ProjectCard 
                 projectImg=''
