@@ -23,8 +23,11 @@ export default function Footer(){
                 </div>
                 
             </article>
-            <p><FaEnvelope />  jgacheru504@gmail.com</p>
-            <p><FaPhone />  +254 723 561 967</p>
+            <article className="lastLine">
+                <p><FaEnvelope />  jgacheru504@gmail.com</p>
+                <p><FaPhone />  +254 723 561 967</p>
+            </article>
+
         </footer>
     )
 }

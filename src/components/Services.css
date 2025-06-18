@@ -29,3 +29,9 @@
     line-height: 1rem;
     padding-bottom: 40px;
 }
+@media (min-width: 600px) {
+    .servicesList > div > h2 {
+        font-size: 1.3rem;
+        line-height: 1.2rem;
+    }
+}

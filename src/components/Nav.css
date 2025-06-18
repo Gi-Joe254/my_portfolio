@@ -1,17 +1,38 @@
-.navbar {
+.navbarMobile {
     background-color: rgb(22, 22, 22);
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.navbar > span {
+.navbarDesktop {
+    display: none;
+}
+.navLinks {
+    display: flex;
+    gap: 30px;
+    color: #9c9a9a;;
+}
+@media (min-width:730px){
+    .navbarMobile {
+        display: none;
+    }
+    .navbarDesktop {
+        background-color: rgb(22, 22, 22);
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        align-items: center;
+    }
+}
+.navContainer > nav > span {
     font-size: 1.4rem;
     font-weight: bold;
     color: rgb(231, 109, 9);
     text-transform: uppercase;
 }
-.navbar > button {
+.navContainer > nav > button {
     background-color: rgb(231, 109, 9);
     color: #fff;
     border: 1px solid transparent;

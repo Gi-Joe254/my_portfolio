@@ -24,3 +24,16 @@ footer > nav > ul {
     justify-content: center;
     padding-top: 15px;
 }
+@media (min-width: 600px){
+    .lastLine {
+        display: flex;
+        justify-content: center;
+        gap: 80px
+    }
+    footer > nav > ul {
+        
+        gap: 50px
+    }
+}
+
+    
