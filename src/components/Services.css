@@ -1,5 +1,6 @@
 .services{
     background-color: #1b1b1b;
+    padding-top: 40px;
     padding-bottom: 90px;
 }
 .services > header {
@@ -12,26 +13,45 @@
 .servicesList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 40px 20px;
-    gap: 20px;
+    padding: 40px 10px;
+    gap: 10px;   
 }
+
 .servicesList > div {
     text-align: center;
     background-color: #242323;
     border-radius: 10px;
     color: #646363;
-    height:200px ;
-    padding: 20px;
+    height:250px ;
+    padding: 10px;
+    min-width: 150px;
 }
 .servicesList > div > h2 {
     color: rgb(231, 109, 9);
     font-size: 1.1rem;
     line-height: 1rem;
+    padding-top: 20px;
     padding-bottom: 40px;
 }
 @media (min-width: 600px) {
     .servicesList > div > h2 {
         font-size: 1.3rem;
         line-height: 1.2rem;
+        padding-top: 40px;
+    }
+    .servicesList {
+        padding: 40px 30px;
+        gap: 20px;
+    }
+}
+@media(min-width:900px){
+    .servicesList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media(min-width:1000px){
+    .servicesList {
+        gap: 30px;
+        padding: 60px 60px;
     }
 }

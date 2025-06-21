@@ -9,20 +9,58 @@
     
     letter-spacing: 0.8px;
 }
-.about > p {
-    color: #818080;
-    padding: 20px;
-    text-align: justify;
-    line-height: 1.9;
+.imgContainer {
+    background-color: #242323;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 0%;
+    height: auto;
+    margin: 20px;
+    flex: 0 0 auto;
+    max-width: 660px;
 }
-.about > .cvBtn {
+.myPhoto {
+    background-color:transparent;    
+    max-height: 550px;
+    object-fit: contain;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+@media(min-width:640px) {
+    .aboutAll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(min-width:730px) {
+    .imgContainer {
+        flex: 1 0 400px;
+    }
+
+}
+
+.aboutText > p {
+    color: #818080;
+    padding: 30px;
+    text-align: justify;
+    line-height: 2;
+}
+.aboutText > .cvBtn {
     background-color: rgb(231, 109, 9);
     border: 1px solid transparent;
     padding: 0.3rem 1rem;
     color:#d1cece;
     display: block;
     margin: 20px auto;
-
+    cursor: pointer;
+    
+}
+.aboutText > .cvBtn:hover {
+    background-color: rgba(231, 109, 9, 0.9);
 }
 .arrowDown {
     padding-top: 0.2rem;

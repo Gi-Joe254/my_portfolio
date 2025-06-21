@@ -18,6 +18,12 @@ footer > nav > ul {
     justify-content: center;
     padding-block: 20px;
 }
+footer > nav > ul > li{
+    cursor: pointer;
+}
+footer > nav > ul > li:hover {
+    color: rgba(231, 109, 9, 0.7);
+}
 .footerConnect > div {
     display: flex;
     gap: 20px;
@@ -30,9 +36,13 @@ footer > nav > ul {
         justify-content: center;
         gap: 80px
     }
-    footer > nav > ul {
-        
+    footer > nav > ul {        
         gap: 50px
+    }
+}
+@media(min-width:730px){
+    .lastLine {
+        padding-bottom: 20px;
     }
 }
 

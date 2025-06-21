@@ -4,35 +4,27 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 .navbarDesktop {
     display: none;
 }
 .navLinks {
     display: flex;
-    gap: 30px;
-    color: #9c9a9a;;
+    gap: 40px;
+    color: #9c9a9a;
+    cursor: pointer;
 }
-@media (min-width:730px){
-    .navbarMobile {
-        display: none;
-    }
-    .navbarDesktop {
-        background-color: rgb(22, 22, 22);
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-        padding: 30px;
-        align-items: center;
-    }
+.navLinks :hover {
+    color: rgba(231, 109, 9, 0.7);
 }
-.navContainer > nav > span {
+.navContainer > nav > .logo{
     font-size: 1.4rem;
     font-weight: bold;
     color: rgb(231, 109, 9);
     text-transform: uppercase;
 }
-.navContainer > nav > button {
+.navBtn {
     background-color: rgb(231, 109, 9);
     color: #fff;
     border: 1px solid transparent;
@@ -40,7 +32,64 @@
     padding: 0.2rem 1.2rem;
     cursor: pointer;
 }
+.navBtn:hover {
+    background-color: rgba(231, 109, 9, 0.9);
+    
+}
 .menuIcon {
     color: #9c9a9a;
     cursor: pointer;
+}
+.menuIcon:hover {
+    color: rgba(231, 109, 9, 0.9);
+}
+.dropMenuList {
+    background-color: rgba(22, 22, 22, 0.9);
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 20px;
+    padding-left: 40px;
+    color: #645f5f;
+}
+.dropMenuList > div {
+    cursor: pointer;
+}
+.dropMenuList > div:hover {
+    color: rgba(231, 109, 9, 0.7);
+    text-decoration: underline;
+}
+@media (min-width:730px){
+    .navbarMobile {
+        display: none;
+    }
+    .dropMenuList {
+        display: none;
+    }
+    .navbarDesktop {
+        background-color: rgb(22, 22, 22);
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        align-items: center;
+    }
+    
+}
+@media (min-width:800px){
+    .navLinks {
+        gap: 60px;
+        font-size: 1.1rem;
+    }
+}
+@media (min-width:900px){
+    .navbarDesktop {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
 }

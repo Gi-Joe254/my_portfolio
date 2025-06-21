@@ -17,6 +17,9 @@
     font-size: 4rem;
     line-height: 1;
     padding-top: 30px;
+    max-width: 850px;
+    display: block;
+    margin: 0 auto;
 }
 @media (min-width: 600px) {
     .hero > h1 {
@@ -50,6 +53,10 @@
     border: 1px solid transparent;
     border-radius: 8px;
     margin-right: 10px;
+    cursor: pointer;
+}
+.contactBtn:hover {
+    background-color: rgba(231, 109, 9, 0.9);
 }
 .cvBtn {
     color: #838282;
@@ -57,4 +64,8 @@
     border-radius: 8px;
     padding: 0.1rem 1rem;
     background-color: transparent;
+    cursor: pointer;
+}
+.cvBtn:hover {
+    border-color: rgba(231, 109, 9, 0.5);
 }
