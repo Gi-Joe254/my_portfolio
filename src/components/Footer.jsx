@@ -2,15 +2,15 @@ import "./Footer.css"
 import { FaInstagram, FaLinkedin, FaFacebook, FaEnvelope, FaPhone } from "react-icons/fa"
 
 
-export default function Footer(){
+export default function Footer(props){
     return(
         <footer>
             <header>Logo</header>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>About Me</li>
+                    <li onClick={props.goToHome}>Home</li>
+                    <li onClick={props.goToServices}>Services</li>
+                    <li onClick={props.goToAbout}>About Me</li>
                     <li>Projects</li>
                 </ul>
             </nav>

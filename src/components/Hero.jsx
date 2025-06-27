@@ -1,11 +1,10 @@
 import "./Hero.css"
 import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa"
-import {  } from "react-icons/fa"
 
 
-export default function Hero(){
+export default function Hero(props){
     return(
-        <section className="hero">
+        <section ref={props.ref} className="hero">
             <p>Hi I am</p>
             <h6>Joseph Gacheru</h6>
             <h1>React Web Developer</h1>

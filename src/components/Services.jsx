@@ -1,8 +1,8 @@
 import "./Services.css"
 
-export default function Services(){
+export default function Services(props){
     return(
-        <section className="services">
+        <section className="services" ref={props.ref}>
             <header>Services</header>
             <article className="servicesList">
                 <div>
@@ -12,7 +12,7 @@ export default function Services(){
                 <div>
                    <h2>UI Implementation</h2>
                    <p>Turning Figma designs into clean, interactive user interfaces</p>
-                </div> 
+                </div>
                 <div>
                    <h2>Website Optimization</h2>
                    <p>Improving website performance, SEO, and user experience</p>

@@ -1,8 +1,9 @@
 import "./Connect.css"
+import { useRef } from "react"
 
-export default function Connect(){
+export default function Connect(props){
     return(
-        <section className="connect">
+        <section ref = {props.ref} className="connect" >
             <header>Connect with me</header>
             <form className="connectForm">
                 <input type="text" name="name" placeholder="Name"/>

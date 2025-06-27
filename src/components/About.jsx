@@ -3,9 +3,9 @@ import { FaRegArrowAltCircleDown, FaReact, FaHtml5, FaCss3, FaGithub, FaGit, FaF
 import { SiJavascript } from "react-icons/si"
 import my_photo from "../images/my_pic.png"
 
-export default function About(){
+export default function About(props){
     return(
-        <section className="about">
+        <section ref= {props.ref} className="about">
             <header>About Me</header>
             <article className="aboutAll">
                 <div className="imgContainer">
