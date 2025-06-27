@@ -49,7 +49,7 @@
     text-align: justify;
     line-height: 2;
 }
-.aboutText > .cvBtn {
+.aboutText > a >.cvBtn {
     background-color: rgb(231, 109, 9);
     border: 1px solid transparent;
     padding: 0.3rem 1rem;
@@ -59,8 +59,8 @@
     cursor: pointer;
     
 }
-.aboutText > .cvBtn:hover {
-    background-color: rgba(231, 109, 9, 0.9);
+.aboutText > a> .cvBtn:hover {
+    background-color: rgba(231, 109, 9, 0.8);
 }
 .arrowDown {
     padding-top: 0.2rem;

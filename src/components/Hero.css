@@ -56,7 +56,7 @@
     cursor: pointer;
 }
 .contactBtn:hover {
-    background-color: rgba(231, 109, 9, 0.9);
+    background-color: rgba(231, 109, 9, 0.8);
 }
 .cvBtn {
     color: #838282;
@@ -67,5 +67,5 @@
     cursor: pointer;
 }
 .cvBtn:hover {
-    border-color: rgba(231, 109, 9, 0.5);
+    border-color: rgba(231, 109, 9, 0.9);
 }

@@ -13,7 +13,9 @@ export default function About(props){
                 </div>
                 <div className="aboutText">
                     <p>I'm a passionate front-end developer with a strong focus on creating clean, responsive, and user-friendly websites. I specialize in building with React, translating designs into functional, mobile-first interfaces. With experience in version control (Git/Github) and deployment platforms like Netlify, I enjoy turning ideas into real-world digital experiences. I'm continuously learning and refining my skills to deliver fast, accessible, and modern web applications</p>
-                    <button className="cvBtn"><FaRegArrowAltCircleDown className="arrowDown" /> Download CV</button>
+                    <a href="/files/my_cv.pdf" rel="noopener noreferrer">
+                        <button className="cvBtn"><FaRegArrowAltCircleDown className="arrowDown" /> Download CV</button>
+                    </a>
                 </div>
             </article>
             

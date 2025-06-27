@@ -15,7 +15,9 @@ export default function Hero(props){
             </ul>
             <article>
                 <button className="contactBtn">Contact Me</button>
-                <button className="cvBtn">Download CV</button>
+                <a href="/files/my_cv.pdf" target="_blank" rel="noopener noreferrer">
+                    <button className="cvBtn">Download CV</button>   
+                </a>                
             </article>
         </section>
         
