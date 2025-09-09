@@ -1,6 +1,6 @@
 .services{
     background-color: #1b1b1b;
-    padding-top: 40px;
+    padding-top: 90px;
     padding-bottom: 90px;
 }
 .services > header {
@@ -24,7 +24,7 @@
     color: #646363;
     height:250px ;
     padding: 10px;
-    min-width: 150px;
+    min-width: 130px;
 }
 .servicesList > div > h2 {
     color: rgb(231, 109, 9);
