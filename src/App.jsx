@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import Nav from './components/Nav'
 import Hero from './components/Hero'
 import Services from './components/Services'
@@ -28,6 +28,9 @@ function App() {
   function goToConnect(){
     toConnect.current.scrollIntoView()
   }
+
+
+
   return (
     <main>
       <Nav  
@@ -38,6 +41,7 @@ function App() {
       />
       <Hero 
         ref = {toHome}
+        goToConnect = {goToConnect}
       />
       <Services 
         ref = {toServices}        

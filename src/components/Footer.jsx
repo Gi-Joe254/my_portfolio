@@ -1,11 +1,12 @@
+import { FaX } from "react-icons/fa6"
 import "./Footer.css"
-import { FaInstagram, FaLinkedin, FaFacebook, FaEnvelope, FaPhone } from "react-icons/fa"
+import { FaInstagram, FaLinkedin, FaFacebook, FaEnvelope, FaPhone, FaGithub, FaLinkedinIn } from "react-icons/fa"
 
 
 export default function Footer(props){
     return(
         <footer>
-            <header>Logo</header>
+            <header>JG</header>
             <nav>
                 <ul>
                     <li onClick={props.goToHome}>Home</li>
@@ -17,9 +18,9 @@ export default function Footer(props){
             <article className="footerConnect">
                 <header>Connect</header>
                 <div>
-                    <a><FaLinkedin /></a>
-                    <a><FaFacebook /></a>
-                    <a><FaInstagram /></a>
+                    <li><a href="https://www.linkedin.com/in/joseph-gacheru-863083219/" target="_blank"><FaLinkedinIn /></a></li>
+                    <li><a href="https://github.com/Gi-Joe254" target="_blank"><FaGithub /></a></li>
+                    <li><a><FaX /></a></li>
                 </div>
                 
             </article>

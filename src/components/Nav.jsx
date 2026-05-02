@@ -15,11 +15,12 @@ export default function Nav(props){
                     toggled={menuPressed}
                     toggle={setMenuPressed}
                     size={20}
+                    color='#9c9a9a'
                     duration={0.8}
                 />
                 
                 <span className='logo'>JG</span>
-                <button className='navBtn'>Contact Me</button>
+                <button className='navBtn' onClick={props.goToConnect}>Contact Me</button>
             </nav>
             {menuPressed ? 
             <div className='dropMenuList'>
