@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import { FaGithub, FaX } from "react-icons/fa6"
+=======
+>>>>>>> 05df71998e981d019afb6722f3b30baedcfe387d
 import "./Hero.css"
 import { FaInstagram, FaLinkedin, FaFacebook } from "react-icons/fa"
 
@@ -8,11 +11,19 @@ export default function Hero(props){
         <section ref={props.ref} className="hero">
             <p>Hi I am</p>
             <h6>Joseph Gacheru</h6>
+<<<<<<< HEAD
             <h1>Fullstack Web Developer</h1>
             <ul className="socials">
                 <li><a href="https://www.linkedin.com/in/joseph-gacheru-863083219/" target="_blank"><FaLinkedin /></a></li>
                 <li><a href="https://github.com/Gi-Joe254" target="_blank"><FaGithub /></a></li>
                 <li><a><FaX /></a></li>
+=======
+            <h1>React Web Developer</h1>
+            <ul className="socials">
+                <li><a><FaLinkedin /></a></li>
+                <li><a><FaFacebook /></a></li>
+                <li><a><FaInstagram /></a></li>
+>>>>>>> 05df71998e981d019afb6722f3b30baedcfe387d
             </ul>
             <article>
                 <button className="contactBtn">Contact Me</button>
