@@ -2,23 +2,23 @@ import { FaBars } from 'react-icons/fa'
 import './Nav.css'
 import { useState } from 'react'
 import { SiX } from 'react-icons/si'
+import Hamburger from 'hamburger-react'
 
 export default function Nav(props){
 
     const [menuPressed, setMenuPressed] = useState(false)
-    
-    function menuClick(){
-        setMenuPressed (prev=>(!prev))
-    }
-   
+       
     return(
         <div className='navContainer'>
             <nav className='navbarMobile'>
-                {menuPressed ? 
-                <SiX className="menuIcon" onClick={menuClick} /> :
-                <FaBars size='20px' className='menuIcon' onClick={menuClick}/>
-                }
-                <span className='logo'>Logo</span>
+                <Hamburger 
+                    toggled={menuPressed}
+                    toggle={setMenuPressed}
+                    size={20}
+                    duration={0.8}
+                />
+                
+                <span className='logo'>JG</span>
                 <button className='navBtn'>Contact Me</button>
             </nav>
             {menuPressed ? 
@@ -30,7 +30,7 @@ export default function Nav(props){
             </div> : null}
             
             <nav className='navbarDesktop'>
-                <span className='logo'>Logo</span>
+                <span className='logo'>JG</span>
                 <div className='navLinks'>
                     <div onClick={props.goToHome}>Home</div>
                     <div onClick={props.goToServices}>Services</div>
