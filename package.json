@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "framer-motion": "^12.38.0",
     "hamburger-react": "^2.5.2",
     "lucide-react": "^0.542.0",
     "react": "^19.1.0",
