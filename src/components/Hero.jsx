@@ -23,7 +23,7 @@ export default function Hero(props){
             <motion.h1
                 initial={{opacity: 0, scaleZ: -20}}
                 animate={{opacity: 1, scaleZ: 0}}
-                transition={{delay: 0.2, type: 'tween', duration: 3}}
+                transition={{delay: 0.2, type: 'tween', duration: 2}}
             >
                 Fullstack Web Developer
             </motion.h1>

@@ -3,6 +3,7 @@ import './Nav.css'
 import { useState } from 'react'
 import { SiX } from 'react-icons/si'
 import Hamburger from 'hamburger-react'
+import { motion } from 'framer-motion'
 
 export default function Nav(props){
 
@@ -19,8 +20,24 @@ export default function Nav(props){
                     duration={0.8}
                 />
                 
-                <span className='logo'>JG</span>
-                <button className='navBtn' onClick={props.goToConnect}>Contact Me</button>
+                <motion.span 
+                    className='logo'
+                    initial= {{x: '-100vw'}}
+                    animate= {{x: 0}}
+                    transition= {{delay: 0.2, duration: 0.5, type: 'tween'}}
+                >
+                    JG
+                </motion.span>
+                <motion.button 
+                    className='navBtn' 
+                    onClick={props.goToConnect}
+                     initial= {{y: '-100vw'}}
+                    animate= {{y: 0}}
+                    transition= {{delay: 0.2, duration: 0.6, type: 'tween'}}
+                
+                >
+                    Contact Me
+                </motion.button>
             </nav>
             {menuPressed ? 
             <div className='dropMenuList'>
