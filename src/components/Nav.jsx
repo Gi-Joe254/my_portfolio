@@ -3,14 +3,71 @@ import './Nav.css'
 import { useState } from 'react'
 import { SiX } from 'react-icons/si'
 import Hamburger from 'hamburger-react'
-import { motion } from 'framer-motion'
+import { delay, motion } from 'framer-motion'
 
+const containerVariants = {
+    hidden: {opacity: 0},
+    visible: {
+        opacity: 1,
+        transition: {
+            when: 'beforeChildren',
+            staggerChildren: 2
+        }
+    }
+}
+const logoVariants = {
+    hidden: { 
+        y: '-100vw'
+    },
+    visible: {
+        y: 0,
+        transition: {
+            delay: 0.2, 
+            duration: 0.6, 
+            type: 'tween'
+        }
+    }
+            
+}
+const navLinkVariants = {
+    hover: {
+        scale: 1.1, 
+        originX: 0,
+        color: '#dad7d7'
+    },
+    hidden: {
+        opacity: 0
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            delay: 0.5, 
+            duration: 0.6, 
+            type: 'tween'
+        }
+    }
+}
+const menuVariants = {
+    hidden: {x: '-100vw'},
+    visible: {
+        x: 0,
+        transition: {
+            delay: 0.5, 
+            duration:1
+        }
+    }
+}
 export default function Nav(props){
 
     const [menuPressed, setMenuPressed] = useState(false)
        
     return(
-        <div className='navContainer'>
+        <motion.div 
+            className='navContainer'
+            variants={containerVariants}
+            initial='hidden'
+            animate='visible'
+        >
             <nav className='navbarMobile'>
                 <Hamburger 
                     toggled={menuPressed}
@@ -18,45 +75,101 @@ export default function Nav(props){
                     size={20}
                     color='#9c9a9a'
                     duration={0.8}
+                    
                 />
                 
                 <motion.span 
                     className='logo'
-                    initial= {{x: '-100vw'}}
-                    animate= {{x: 0}}
-                    transition= {{delay: 0.2, duration: 0.5, type: 'tween'}}
+                    variants={logoVariants}
                 >
                     JG
                 </motion.span>
                 <motion.button 
                     className='navBtn' 
                     onClick={props.goToConnect}
-                     initial= {{y: '-100vw'}}
-                    animate= {{y: 0}}
-                    transition= {{delay: 0.2, duration: 0.6, type: 'tween'}}
-                
+                   variants={logoVariants}
                 >
                     Contact Me
                 </motion.button>
             </nav>
             {menuPressed ? 
-            <div className='dropMenuList'>
-                <div onClick={props.goToHome}>Home</div>
-                <div onClick={props.goToServices}>Services</div>
-                <div onClick={props.goToAbout}>About</div>
-                <div onClick={props.goToConnect}>Connect</div>
-            </div> : null}
+            <motion.div 
+                className='dropMenuList'
+                variants={menuVariants}
+            >
+                <motion.div 
+                    variants={navLinkVariants}
+                    whileHover='hover'
+                    onClick={props.goToHome}
+                >Home
+                </motion.div>
+
+                <motion.div 
+                    variants={navLinkVariants}
+                    whileHover= 'hover'
+                    onClick={props.goToServices}
+                >Services
+                </motion.div>
+                
+                <motion.div 
+                    variants={navLinkVariants}
+                    whileHover= 'hover'
+                    onClick={props.goToAbout}
+                >About
+                </motion.div>
+                
+                <motion.div 
+                    variants={navLinkVariants}
+                    whileHover= 'hover'
+                    onClick={props.goToConnect}
+                    >Connect
+                </motion.div>
+            </motion.div> : null}
             
             <nav className='navbarDesktop'>
-                <span className='logo'>JG</span>
-                <div className='navLinks'>
-                    <div onClick={props.goToHome}>Home</div>
-                    <div onClick={props.goToServices}>Services</div>
-                    <div onClick={props.goToAbout}>About Me</div>
-                    <div onClick={props.goToConnect}>Connect</div>
-                </div>
-                <button className='navBtn'>Contact Me</button>
+                <motion.span 
+                    className='logo'
+                   variants={logoVariants}
+                >
+                    JG
+                </motion.span>
+
+                <motion.div 
+                    className='navLinks'
+                    variants={navLinkVariants}
+                >
+                    <motion.div 
+                        variants={navLinkVariants}
+                        whileHover='hover' 
+                        onClick={props.goToHome}
+                    >Home
+                    </motion.div>
+                    <motion.div 
+                        variants={navLinkVariants}
+                        whileHover='hover' 
+                        onClick={props.goToServices}
+                    >Services
+                    </motion.div>
+                    <motion.div
+                        variants={navLinkVariants} 
+                        whileHover='hover' 
+                        onClick={props.goToAbout}
+                    >About Me
+                    </motion.div>
+                    <motion.div
+                        variants={navLinkVariants} 
+                        whileHover='hover' 
+                        onClick={props.goToConnect}
+                    >Connect
+                    </motion.div>
+                </motion.div>
+                <motion.button 
+                    className='navBtn'
+                    variants={logoVariants}                
+                >
+                    Contact Me
+                </motion.button>
             </nav>
-        </div>
+        </motion.div>
     )
 }

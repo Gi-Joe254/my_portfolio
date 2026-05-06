@@ -15,9 +15,9 @@
     color: #9c9a9a;
     cursor: pointer;
 }
-.navLinks :hover {
+/*.navLinks :hover {
     color: rgba(231, 109, 9, 0.7);
-}
+}*/
 .navContainer > nav > .logo{
     font-size: 1.4rem;
     font-weight: bold;
@@ -60,10 +60,11 @@
 .dropMenuList > div {
     cursor: pointer;
 }
-.dropMenuList > div:hover {
+
+/*.dropMenuList > div:hover {
     color: rgba(231, 109, 9, 0.7);
     text-decoration: underline;
-}
+}*/
 @media (min-width:730px){
     .navbarMobile {
         display: none;
