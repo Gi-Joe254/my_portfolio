@@ -81,7 +81,10 @@ const cardVariants = {
       opacity: 1,
       transition: {
          duration: 1.2,
-         ease: 'easeOut'
+         ease: 'easeOut',
+         type: 'spring',
+         damping: 5,
+         stiffness: 100
       }
    }
 }

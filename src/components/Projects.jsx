@@ -4,13 +4,53 @@ import finImg from "../images/ProjectFin.png"
 import recImg from "../images/ProjectRecipe.png"
 import shopImg from "../images/shopImg.png"
 import adminImg from "../images/adminImg.png"
+import { motion } from "framer-motion"
 
+const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            delayChildren: 1.2,
+            staggerChildren: 0.8
+        }
+    }
+}
+
+const titleVariants = {
+    hidden: { y: 30, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.5,
+            ease: 'easeOut'
+        }
+    }
+}
+
+const cardVariants = {
+   hidden: {y: 30, opacity: 0},
+   visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+         duration: 0.8,
+         ease: 'easeOut'
+      }
+   }
+}
 
 export default function Projects(){
     return(
-        <section className="projects">
-            <header>Projects</header>
-            <div>
+        <motion.section 
+            className="projects"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+        >
+            <motion.header variants={titleVariants}>Projects</motion.header>
+            <motion.div variants={cardVariants}>
             <ProjectCard
                 link= "https://trixx-solutions.vercel.app/"
                 description= 'A business website for an electronics sales and repair shop.' 
@@ -35,7 +75,7 @@ export default function Projects(){
                 projectImg={recImg}
                 projectCaption="Recipe Generator"
             />
-            </div>
-        </section>
+            </motion.div>
+        </motion.section>
     )
 }
