@@ -66,7 +66,11 @@ const imageVariants = {
 }
 
 const articleVariants = {
+    hidden: {
+        opacity: 0
+    },
     visible: {
+        opacity: 1,
         transition: {
             delayChildren: 2,
             staggerChildren: 0.15
@@ -97,7 +101,7 @@ export default function About(props){
             variants={containerVariants}
             initial='hidden'
             whileInView='visible'
-            viewport={{ once:true, amount:0.3 }}
+            viewport={{ once:true, amount:0.1 }}
 
         >
             <motion.header variants={titleVariants}>About Me</motion.header>
@@ -121,6 +125,8 @@ export default function About(props){
             <motion.article 
                 className="skills"
                 variants={articleVariants}
+                initial='hidden'
+                whileInView='visible'
                 viewport={{once: true, amount: 0.3}}
             >
                 <motion.figure variants={cardVariants} >

@@ -41,9 +41,10 @@ const cardVariants = {
    }
 }
 
-export default function Projects(){
+export default function Projects(props){
     return(
         <motion.section 
+        ref={props.ref}
             className="projects"
             variants={containerVariants}
             initial="hidden"

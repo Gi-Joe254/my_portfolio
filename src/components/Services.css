@@ -18,21 +18,29 @@
 }
 
 .servicesList > div {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     background-color: #242323;
     border-radius: 10px;
     color: #646363;
     height:250px ;
     padding: 10px;
-    min-width: 130px;
 }
 .servicesList > div > h2 {
     color: rgb(231, 109, 9);
-    font-size: 1.1rem;
-    line-height: 1rem;
+    font-size: clamp(1rem, 3vw, 1.2rem);
+    line-height: 1.2;
     padding-top: 20px;
     padding-bottom: 40px;
+    height: 100px;
 }
+.servicesList > div > p {
+    
+    font-size: clamp(0.8rem, 3vw, 1rem);
+    line-height:  clamp(1rem, 3vw, 1.8rem);
+}
+
 @media (min-width: 600px) {
     .servicesList > div > h2 {
         font-size: 1.3rem;

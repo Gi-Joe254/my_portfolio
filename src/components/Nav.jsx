@@ -11,7 +11,8 @@ const containerVariants = {
         opacity: 1,
         transition: {
             when: 'beforeChildren',
-            staggerChildren: 2
+            delayChildren: 0.2,
+            staggerChildren: 0.25
         }
     }
 }
@@ -22,7 +23,6 @@ const logoVariants = {
         y: 0,
         opacity: 1,
         transition: {
-            delay: 0.3,
             duration: 0.5,
             ease: 'easeOut'
         }
@@ -40,7 +40,6 @@ const navLinkVariants = {
     visible: {
         opacity: 1,
         transition: {
-            delay: 0.5, 
             duration: 0.6, 
             type: 'tween'
         }
@@ -51,7 +50,6 @@ const menuVariants = {
     visible: {
         x: 0,
         transition: {
-            delay: 0.5, 
             duration:1
         }
     }
@@ -116,6 +114,13 @@ export default function Nav(props){
                     onClick={props.goToAbout}
                 >About
                 </motion.div>
+            
+               <motion.div 
+                    variants={navLinkVariants}
+                    whileHover= 'hover'
+                    onClick={props.goToProjects}
+                >Projects
+                </motion.div>
                 
                 <motion.div 
                     variants={navLinkVariants}
@@ -154,6 +159,12 @@ export default function Nav(props){
                         whileHover='hover' 
                         onClick={props.goToAbout}
                     >About Me
+                    </motion.div>
+                    <motion.div 
+                        variants={navLinkVariants}
+                        whileHover= 'hover'
+                        onClick={props.goToProjects}
+                    >Projects
                     </motion.div>
                     <motion.div
                         variants={navLinkVariants} 

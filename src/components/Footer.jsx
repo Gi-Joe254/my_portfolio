@@ -8,8 +8,8 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            delayChildren: 0.3,
-            staggerChildren: 0.5
+            delayChildren: 0.25,
+            staggerChildren: 0.25
         }
     }
 }
@@ -43,7 +43,7 @@ export default function Footer(props){
             variants={containerVariants}
             initial='hidden'
             whileInView='visible'
-            viewport={{once: true, amount: 0.6}}
+            viewport={{once: true, amount: 0.3}}
         >
             <motion.header variants={titleVariants}>JG</motion.header>
             <nav>
