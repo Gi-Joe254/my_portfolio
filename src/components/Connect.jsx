@@ -7,8 +7,8 @@ const containerVariants = {
     visible: {
         opacity: 1,
         transition: {
-            delayChildren: 0.3,
-            staggerChildren: 0.5
+            delayChildren: 0.25,
+            staggerChildren: 0.25
         }
     }
 }
@@ -57,6 +57,7 @@ export default function Connect(props){
             variants={containerVariants}
             initial='hidden'
             whileInView='visible'
+            viewport={{once:true, amount: 0.3}}
         >
             <motion.header variants={titleVariants}>Connect with me</motion.header>
             <form className="connectForm">

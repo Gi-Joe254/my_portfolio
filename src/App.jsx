@@ -15,6 +15,7 @@ function App() {
   const toServices = useRef(null)
   const toAbout = useRef(null)
   const toConnect = useRef(null)
+  const toProjects = useRef(null)
 
   function goToHome(){
     toHome.current.scrollIntoView()
@@ -27,6 +28,9 @@ function App() {
   }
   function goToConnect(){
     toConnect.current.scrollIntoView()
+  }
+  function goToProjects(){
+    toProjects.current.scrollIntoView()
   }
 
 
@@ -49,7 +53,9 @@ function App() {
       <About 
         ref = {toAbout}
       />
-      <Projects />
+      <Projects 
+        ref = {toProjects}
+      />
       <Connect 
         ref = {toConnect}
       />
@@ -58,6 +64,7 @@ function App() {
         goToServices = {goToServices}
         goToAbout = {goToAbout}
         goToConnect = {goToConnect}
+        goToProjects = {goToProjects}
       />      
     </main>
   )

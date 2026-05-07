@@ -48,6 +48,7 @@ export default function Projects(){
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once:true, amount:0.3 }}
         >
             <motion.header variants={titleVariants}>Projects</motion.header>
             <motion.div variants={cardVariants}>

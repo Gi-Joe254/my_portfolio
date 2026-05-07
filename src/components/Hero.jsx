@@ -53,6 +53,7 @@ const buttonVariants = {
 const hoverVariants = {
     hover: {
         scale: 1.15,
+        color: '#dad7d7',
         transition: {
             duration: 0.2,
             ease: 'easeOut'
@@ -67,7 +68,7 @@ export default function Hero(props){
             className="hero"
             variants={containerVariants}
             initial='hidden'
-            animate='visible'
+            whileInView='visible'
         >
             <motion.p variants={textVariants}>
                 Hi I am

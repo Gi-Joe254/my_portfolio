@@ -15,19 +15,18 @@ const containerVariants = {
         }
     }
 }
+
 const logoVariants = {
-    hidden: { 
-        y: '-100vw'
-    },
+    hidden: { y: -50, opacity: 0 },
     visible: {
         y: 0,
+        opacity: 1,
         transition: {
-            delay: 0.2, 
-            duration: 0.6, 
-            type: 'tween'
+            delay: 0.3,
+            duration: 0.5,
+            ease: 'easeOut'
         }
     }
-            
 }
 const navLinkVariants = {
     hover: {
