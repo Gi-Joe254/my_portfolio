@@ -3,9 +3,10 @@
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     position: fixed;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
     top: 0;
     left: 0;
     z-index: 1000
@@ -83,6 +84,7 @@
     color: rgba(231, 109, 9, 0.7);
     text-decoration: underline;
 }*/
+
 @media (min-width:768px){
     .navbarMobile {
         display: none;

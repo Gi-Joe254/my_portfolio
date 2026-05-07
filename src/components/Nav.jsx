@@ -1,9 +1,8 @@
 import { FaBars } from 'react-icons/fa'
 import './Nav.css'
-import { useState } from 'react'
-import { SiX } from 'react-icons/si'
+import { useEffect, useState } from 'react'
 import Hamburger from 'hamburger-react'
-import { delay, motion } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const containerVariants = {
     hidden: {opacity: 0},
@@ -54,10 +53,9 @@ const menuVariants = {
         }
     }
 }
-export default function Nav(props){
 
-    const [menuPressed, setMenuPressed] = useState(false)
-       
+export default function Nav(props){
+    
     return(
         <motion.div 
             className='navContainer'
@@ -66,14 +64,17 @@ export default function Nav(props){
             animate='visible'
         >
             <nav className='navbarMobile'>
-                <Hamburger 
-                    toggled={menuPressed}
-                    toggle={setMenuPressed}
-                    size={20}
-                    color='#9c9a9a'
-                    duration={0.8}
-                    
-                />
+                <div className="menuIcon">
+                    <Hamburger 
+                        toggled={props.menuPressed}
+                        toggle={props.setMenuPressed}
+                        size={20}
+                        color='#9c9a9a'
+                        duration={0.8}
+                        
+                    />
+                </div>
+                
                 
                 <motion.span 
                     className='logo'
@@ -89,7 +90,7 @@ export default function Nav(props){
                     Contact Me
                 </motion.button>
             </nav>
-            {menuPressed ? 
+            {props.menuPressed ? 
             <motion.div 
                 className='dropMenuList'
                 variants={menuVariants}
