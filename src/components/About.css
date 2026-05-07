@@ -29,20 +29,6 @@
 
 }
 
-@media(min-width:640px) {
-    .aboutAll {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-@media(min-width:730px) {
-    .imgContainer {
-        flex: 1 0 400px;
-    }
-
-}
-
 .aboutText > p {
     color: #818080;
     padding: 30px;
@@ -79,7 +65,7 @@
 }
 
 .skills > figure {
-    border: 6px solid rgb(231, 109, 9);
+    border: 2px solid rgb(231, 109, 9);
     border-radius: 40px;
     padding: 20px;
     display: flex;
@@ -98,4 +84,18 @@
 }
 figcaption {
     color: #818080;
+}
+
+@media(min-width:640px) {
+    .aboutAll {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media(min-width:730px) {
+    .imgContainer {
+        flex: 1 0 400px;
+    }
+
 }
